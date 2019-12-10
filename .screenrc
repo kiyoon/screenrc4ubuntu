@@ -31,3 +31,7 @@ hardstatus string '%{= Kd} %{= Kd}%-w%{= Kr}[%{= KW}%n %t%{= Kr}]%{= Kd}%+w %-= 
 bind f eval "hardstatus ignore"
 # Show hardstatus: ctrl-a F
 bind F eval "hardstatus alwayslastline"
+
+# unbind the x key, which locks the terminal
+bind ^x
+bind x
