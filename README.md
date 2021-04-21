@@ -14,7 +14,8 @@
 ## Detach and resume
 - Ctrl+a + d: detach screen
 - screen -r: resume screen
-- screen -r <number>: resume screen (specified by the number)
+- screen -r \<number\>: resume screen (specified by the number)
+- screen -r -d: detach and resume screen. Use it when above fails.
 
 ## Divide
 - Ctrl+a + |: divide screen
