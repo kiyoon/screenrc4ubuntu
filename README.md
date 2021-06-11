@@ -21,6 +21,7 @@
 - Ctrl+a + |: divide screen (vertical)
 - Ctrl+a + S: divide screen (horizontal)
 - Ctrl+a + \<Tab\>: move between divided screen
+- (Custom binding) Ctrl+a + \<ArrowKey\>: move between divided screen
 - Ctrl+a + X: close divided screen
 
 ## Copy / scroll
