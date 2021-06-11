@@ -18,7 +18,8 @@
 - screen -r -d: detach and resume screen. Use it when above fails.
 
 ## Divide
-- Ctrl+a + |: divide screen
+- Ctrl+a + |: divide screen (vertical)
+- Ctrl+a + S: divide screen (horizontal)
 - Ctrl+a + \<Tab\>: move between divided screen
 - Ctrl+a + X: close divided screen
 
