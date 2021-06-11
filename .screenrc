@@ -35,3 +35,10 @@ bind F eval "hardstatus alwayslastline"
 # unbind the x key, which locks the terminal
 bind ^x
 bind x
+
+# Arrows to move between screen splits
+# -t option disables the timer so you have more time between Ctrl+a and arrows
+bindkey -t "^A^[OC" focus right
+bindkey -t "^A^[OD" focus left
+bindkey -t "^A^[OA" focus up
+bindkey -t "^A^[OB" focus down
