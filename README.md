@@ -1,5 +1,5 @@
 # screenrc4ubuntu
-The .screenrc file that enables intuitive GNU screen UI & commands.
+The .screenrc file that enables intuitive GNU screen UI & commands.  
 Unlike what the name says, it's not only for Ubuntu, but also for any OS really.
 
 ![Example screen](https://user-images.githubusercontent.com/12980409/123901028-2ba50b80-d9a5-11eb-9332-5bba6285c76b.png)
