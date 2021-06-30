@@ -41,7 +41,11 @@ First of all, launch screen: `screen`
 - Ctrl+a + X: close divided screen
 
 ## Copy / scroll
-- Ctrl+a + \<ESC\>: Copy mode (to scroll)
+- Ctrl+a + \<ESC\>: Copy mode (use vim commands to scroll)
+  - Ctrl+f: page down (front page)
+  - Ctrl+b: page up (back page)
+  - Ctrl+d: half page down
+  - Ctrl+u: half page up
 - In copy mode, \<Space\> to select region. \<Space\> again to copy.
 
 ## Other tips
