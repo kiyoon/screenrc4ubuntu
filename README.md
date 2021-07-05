@@ -26,6 +26,7 @@ First of all, launch screen: `screen`
 - Ctrl+a + n: next window
 - Ctrl+a + p: previous window
 - Ctrl+a + \<number\>: jump to the window number
+- Ctrl+a + A: change window title
 
 ## Detach and resume
 - Ctrl+a + d: detach screen
