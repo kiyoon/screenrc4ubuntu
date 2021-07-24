@@ -27,6 +27,7 @@ First of all, launch screen: `screen`
 - Ctrl+a + p: previous window
 - Ctrl+a + \<number\>: jump to the window number
 - Ctrl+a + A: change window title
+- Ctrl+a + :number \<number\>: change window number
 
 ## Detach and resume
 - Ctrl+a + d: detach screen
@@ -51,3 +52,4 @@ First of all, launch screen: `screen`
 
 ## Other tips
 - If you press Ctrl+s by mistake, it will freeze. Ctrl+q to unfreeze.
+- On a nested screen, use Ctrl+a + a + \<command\>.
