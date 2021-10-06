@@ -50,7 +50,7 @@ First of all, launch screen: `screen`
   - Ctrl+b: page up (back page)
   - Ctrl+d: half page down
   - Ctrl+u: half page up
-- In copy mode, \<Space\> to select region. \<Space\> again to copy.
+- In copy mode, \<Space\> to select region. \<Space\> again to copy. Then Ctrl+a + ] to paste.
 
 ## Other tips
 - If you press Ctrl+s by mistake, it will freeze. Ctrl+q to unfreeze.
