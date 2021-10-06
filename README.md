@@ -32,7 +32,7 @@ First of all, launch screen: `screen`
 ## Detach and resume
 - Ctrl+a + d: detach screen
 - `screen -r`: resume screen
-- `screen -r \<number\>`: resume screen (specified by the number)
+- `screen -r <number>`: resume screen (specified by the number)
 - `screen -r -d`: detach and resume screen. Use it when above fails.
 
 ## Divide
@@ -41,6 +41,8 @@ First of all, launch screen: `screen`
 - Ctrl+a + \<Tab\>: move between divided screen
 - (Custom binding) Ctrl+a + \<ArrowKey\>: move between divided screen
 - Ctrl+a + X: close divided screen
+- Ctrl+a + :resize -h 30%: set width of the divided window to 30%. (if you drop %, it will be line number)
+- Ctrl+a + :resize -v 30%: set height of the window to 30%. (if you drop %, it will be line number)
 
 ## Copy / scroll
 - Ctrl+a + \<ESC\>: Copy mode (use vim commands to scroll)
