@@ -52,6 +52,44 @@ First of all, launch screen: `screen`
   - Ctrl+u: half page up
 - In copy mode, \<Space\> to select region. \<Space\> again to copy. Then Ctrl+a + ] to paste.
 
+## Kill window / session
+- Ctrl+a + k or Ctrl+a + :kill : kill window
+- Ctrl+a + \\ or Ctrl+a + :quit : kill all windows and quit session 
+
 ## Other tips
 - If you press Ctrl+s by mistake, it will freeze. Ctrl+q to unfreeze.
 - On a nested screen, use Ctrl+a + a + \<command\>.
+
+# Advanced: scripting with screen
+- `screen -dmS <session_name>`: create a session in detached mode.
+- `screen -S <session_name> -p <window> -X screen`: create window in the session.
+- `screen -S <session_name> -p <window> -X stuff "command\n"`: execute command in the window session.
+- `screen -S <session_name> -p <window> -X kill`: kill window
+- `screen -S <session_name> -X quit`: kill all windows and quit session
+
+## Example: run batch job
+
+Below will create 3 windows and run python commands like:  
+- `CUDA_VISIBLE_DEVICES=0 python train.py --arg 1`
+- `CUDA_VISIBLE_DEVICES=1 python train.py --arg 2`
+- `CUDA_VISIBLE_DEVICES=2 python train.py --arg 3`
+
+```bash
+#!/bin/bash
+
+sess="session_name"
+
+screen -dmS "$sess"
+
+for window in {0..2}
+do
+    # Window 0 already exists so don't make it again
+    if [ $window -ne 0 ]
+    then
+        screen -S "$sess" -X screen $window
+    fi
+
+    command="CUDA_VISIBLE_DEVICES=$window python train.py --arg $((window+1))\n"
+    screen -S "$sess" -p $window -X stuff "$command"
+done
+```
