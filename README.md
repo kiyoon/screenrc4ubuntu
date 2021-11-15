@@ -25,6 +25,7 @@ First of all, launch screen: `screen`
 - `exit`: exit window
 - Ctrl+a + n: next window
 - Ctrl+a + p: previous window
+- Ctrl+aa: toggle two windows
 - Ctrl+a + \<number\>: jump to the window number
 - Ctrl+a + A: change window title
 - Ctrl+a + :number \<number\>: change window number
@@ -59,6 +60,7 @@ First of all, launch screen: `screen`
 ## Other tips
 - If you press Ctrl+s by mistake, it will freeze. Ctrl+q to unfreeze.
 - On a nested screen, use Ctrl+a + a + \<command\>.
+- `screen -X eval "chdir $PWD"`: change default directory for new windows.
 
 # Advanced: scripting with screen
 - `screen -dmS <session_name>`: create a session in detached mode.
