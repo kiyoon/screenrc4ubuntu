@@ -42,3 +42,6 @@ bindkey -t "^A^[OC" focus right
 bindkey -t "^A^[OD" focus left
 bindkey -t "^A^[OA" focus up
 bindkey -t "^A^[OB" focus down
+
+# Detach and Re-attach without losing the regions/windows layout
+layout save default
