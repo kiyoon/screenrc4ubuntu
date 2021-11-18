@@ -35,6 +35,7 @@ First of all, launch screen: `screen`
 - `screen -r`: resume screen
 - `screen -r <number>`: resume screen (specified by the number)
 - `screen -r -d`: detach and resume screen. Use it when above fails.
+- `screen -RR`: resume the first session
 
 ## Divide
 - Ctrl+a + |: divide screen (vertical)
